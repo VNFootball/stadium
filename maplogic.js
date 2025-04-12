@@ -130,6 +130,8 @@ function initialise() {
             var team = myData[item].team; //stadium team affilication
             var logo = myData[item].logo; //team logo
             var league = myData[item].league; //team's league
+            var fb = myData[item].fb;
+            var web = myData[item].web;
 
             //switch statement to add to league counters based on value of item's team.
             switch (league) {
@@ -162,6 +164,9 @@ function initialise() {
                 team +
                 '<br><b>Capacity:</b> ' +
                 myData[item].capacity +
+                '<br><b>Link:</b> ' +
+                '<a target="_blank" rel="noopener noreferrer" href=' + fb + '><img src="./Images/facebook.png" alt="fb" style="width:15px;height:15px;"></a>' + "  " +
+                '<a target="_blank" rel="noopener noreferrer" href=' + web + '><img src="./Images/world-wide-web.png" alt="fb" style="width:15px;height:15px;"></a>'
                 '</div>';
 
             //create and add markers and popups to map.
